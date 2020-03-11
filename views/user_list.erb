@@ -1,0 +1,8 @@
+<h1><%= "User #{params[:name]} was found" %></h1>
+<ul>
+  <% @users.each do |u| %>
+  <li>
+  <%= u.name + '|' + u.email + '|' + u.team.name %>
+  </li>
+  <% end %>
+</eul>

@@ -1,0 +1,12 @@
+<h1><%= "Team #{params[:name]} was found" %></h1>
+<ul>
+  <% ta = Team.all %>
+  <% ta.each do |t| %>
+    <% t.users.each do |u| %>
+  <li>
+      <%= u.name + "|" + t.name  + "|" + t.notes %>
+      <% end %>
+  <% end %>
+  </li>
+</eul>
+
